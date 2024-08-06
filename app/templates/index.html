@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="refresh"
+      content="0; url=https://repo.github.io/folder/index.html"
+    />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../static/styles.css" />
+    <script src="../static/date.js"></script>
+  </head>
+  <body>
+    <h1 id="header">DTC Etsy Dashboard</h1>
+    <button id="changeTextBtn">Get updated data</button>
+    <p id="updatedDate">Updated <span id="currentDate"></span></p>
+
+    <!-- Add this div to hold the table -->
+    <div id="tableContainer"></div>
+
+    <!-- Load D3.js first, then other scripts that depend on it -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="../static/graph.js"></script>
+    <script src="../static/tags.js"></script>
+    <script src="../static/table.js"></script>
+  </body>
+</html>
